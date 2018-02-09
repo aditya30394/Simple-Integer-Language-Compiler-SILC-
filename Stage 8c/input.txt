@@ -1,0 +1,31 @@
+decl
+	integer a[10];
+	integer i,j,temp;
+	boolean z,x;
+enddecl 
+integer main(){
+begin
+	
+a[8]=1;
+a[9]=1;
+a[10]=10;
+
+read(a[20]);
+read(a[1]);
+read(a[15]);
+
+write(12);
+write(a[8]);
+write(a[10]);
+write(a[20]);
+write(a[9]);
+write(12);
+
+
+
+
+
+
+
+end  
+}

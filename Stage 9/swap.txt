@@ -1,0 +1,47 @@
+decl
+integer a,b;
+integer swap(integer &x,&y);
+integer x[10];
+enddecl 
+
+integer swap(integer &x,&y)
+{
+	decl
+	integer k,r,s;
+	enddecl
+	begin
+	k=x;
+	x=y;
+	y=k;
+	return x+y;
+	end
+}
+integer main(){
+decl
+integer b,c;
+integer l,m,n,o,p;	
+enddecl
+
+begin
+	read(b);
+	read(c);
+
+	l=swap(b,c);
+	write(b);
+	write(c);
+	write(l);
+	
+	read(x[112]);
+	read(x[0]);
+	read(x[9]);
+	l=swap(x[9],x[0]);
+	write(x[0]);
+	write(x[9]);
+	write(l);
+
+
+
+	
+return 1;
+end  
+}

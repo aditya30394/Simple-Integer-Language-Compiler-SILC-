@@ -1,0 +1,62 @@
+decl
+	integer a[100],n,swap(integer &a,&b),partition(integer l,h),quicksort(integer l,h);
+enddecl
+integer swap(integer &a,&b)
+{
+	integer temp;
+	begin
+	temp=a;
+	a=b;
+	b=temp;
+	return 0;
+	end
+}
+integer partition(integer l,h)
+{
+	integer x,i,j,dummy;
+	begin
+	x=a[h];
+	i=l-1;
+	j=l;
+	while(j<h) do
+		if (a[j]<=x) then
+			i=i+1;
+			dummy=swap(a[i],a[j]);
+		endif
+		j=j+1;
+	endwhile
+	dummy=swap(a[i+1],a[h]);
+	return (i+1);
+	end
+}
+integer quicksort(integer l,h)
+{
+	integer p,dummy;
+	begin
+	if (l<h) then
+		p=partition(l,h);
+		dummy=quicksort(l,p-1);
+		dummy=quicksort(p+1,h);
+	endif
+	return 0;
+	end
+}
+integer main()
+{
+	integer i;
+	begin
+	read(n);
+	i=0;
+	while (i<n) do
+		read(a[i]);
+		i=i+1;
+	endwhile
+	i=quicksort(0,n-1);
+	i=0;
+	while (i<n) do
+		write(a[i]);
+		i=i+1;
+	endwhile
+	return 0;
+	end
+}	

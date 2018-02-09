@@ -1,0 +1,26 @@
+decl
+	integer fact(integer n),a;
+enddecl
+integer fact(integer n)
+{
+	integer f;
+	begin
+	if(n==1) then
+		f=1;
+	else
+		f=n*fact(n-1);
+	endif
+	return f;
+	end
+}
+integer main()
+{
+	integer b;
+	begin
+	read(a);
+	b=fact(a);
+	write(b);
+	write(a);
+	return 0;
+	end
+}

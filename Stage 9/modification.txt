@@ -1,0 +1,33 @@
+decl
+	integer f(integer x);
+enddecl
+
+integer f(integer x){
+decl
+	integer r;
+enddecl
+begin
+	if(x>=80)then
+		r=80;
+	else
+		r=f(f(f(x+1)));
+	endif;
+
+	return r;
+end
+}
+
+integer main(){
+	decl
+		integer i,res;
+	enddecl
+	begin
+
+	read(i);
+	
+	res = f(i);
+	write(res);		
+	return 1;
+	end
+}
+

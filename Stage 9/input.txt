@@ -1,0 +1,42 @@
+decl
+integer a,b;
+integer sum(integer x,y,&z,p,&q);
+enddecl 
+
+integer sum(integer x,y,&z,p,&q)
+{
+	decl
+	integer k,r,s;
+	enddecl
+	begin
+	s=x+y;
+	read(b);
+	z=500;
+	p=500;
+	q=500;
+	return s+b;
+	end
+}
+integer main(){
+decl
+integer b,c;
+integer l,m,n,o,p;	
+enddecl
+
+begin
+l=10;
+m=20;
+n=30;
+o=40;
+p=50;
+	b=sum(l,m,n,o,p);
+	
+	write(b);
+	write(l);
+	write(m);
+	write(n);
+	write(o);
+	write(p);
+return 1;
+end  
+}
