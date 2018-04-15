@@ -14,3 +14,7 @@ by an operating system running on a target machine. Normally, an OS system insta
 how binary executable files must be formatted to run on the system. This interface is called the Application Binary Interface (ABI). 
 The ABI is dependent on both the OS and the machine architecture. The ABI for this project is that of the Experimental Operating System 
 (ExpOS) running on the Experimental String Machine. [XSM]. The ABI specification is given [here](http://silcnitc.github.io/abi.html). (The simulator allows the target program to contain machine instructions in mnemonic form, avoiding translation to binary format).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
